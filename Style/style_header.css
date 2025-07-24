@@ -1,0 +1,80 @@
+@font-face {
+    font-family: likin_park;
+    src: url(../fonts/linkin_park/LinkinPark.ttf);
+}
+
+
+.header{
+    position: relative;
+    width: 100%;
+    height: min-content;
+    background-color: black;
+}
+.header::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    position: absolute;
+}
+.cont_logo_nav{
+    width: 100px;
+    margin: 5px;
+}
+.cont_logo_nav img{
+    width: 100%;
+}
+.nav_header{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cont_links_nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.cont_links_nav a{
+    font-family: likin_park;
+    position: relative;
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-style: italic;
+}
+.cont_links_nav a::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 1;
+    display: block;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.cont_links_nav a::after{
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: right;
+    width: 100%; 
+}
+
+.cont_links_nav a:hover::before, .cont_links_nav a:hover::after {
+    transform: scaleX(1);
+}

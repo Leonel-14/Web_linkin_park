@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Mantener el nav arriba y el footer abajo
+sin importar su contenido*/
+body{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+.section_main{
+    background-image: url(../img/Linkin_Park\ fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 0.9fr 1fr 1fr;
+}

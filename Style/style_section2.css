@@ -1,0 +1,74 @@
+@font-face {
+    font-family: likin_park;
+    src: url(../fonts/linkin_park/LinkinPark.ttf);
+}
+.section_members{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.sub_members{
+    color: white;
+    width: 100%;
+    margin-left: 2em;
+    font-family: likin_park;
+    font-size: 3em;
+}
+.cont_members{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-around;
+}
+.cont_card{
+    width: 250px;
+    height: 700px;
+    border: 1px solid black;
+    justify-items: center;
+    text-align: center;
+    background-color: rgba(130,130,130,0.5);
+}
+.cont_card_img{
+    width: 250px;
+    margin: 10px;
+}
+.cont_card_img img{
+    width: 100%;
+    clip-path: circle();
+
+}
+.cont_card_text p{
+    color: white;
+    font-size: 0.85em;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.cont_card_instrument{
+width: 100px;
+height: 100px;
+clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+background-color: rgb(255, 255, 255);
+justify-items: center;
+align-content: center;
+
+}
+.cont_card_instrument_icon{
+    width: 95px;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    background-color: rgb(0, 0, 0);
+    gap: 10px;
+    
+}
+.cont_card_instrument_icon i{
+    font-size: 2em;
+    color: white;
+    
+}

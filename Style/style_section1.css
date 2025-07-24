@@ -1,0 +1,36 @@
+
+.section_introduction{
+    width: 100%;
+    height: 100vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.introduction{
+    width: 50%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(100,100,100,0.7);
+    padding: 10px;
+    position: relative;
+    
+}
+
+
+.cont_logo_intr{
+    width: 150px;
+}
+.cont_logo_intr img{
+    width: 100%;
+    
+}
+.introduction_text p{
+    
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+}

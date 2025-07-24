@@ -1,0 +1,38 @@
+@font-face {
+    font-family: likin_park;
+    src: url(../fonts/linkin_park/LinkinPark.ttf);
+}
+
+.footer{
+  background-color: black;
+  width: 100%;
+  height: min-content;
+  color: white;
+}
+.nav_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.networks, .page_official{
+    font-size: 1.5em;
+}
+.networks{
+    letter-spacing: 10px;
+}
+.networks a, .page_official a{
+    text-decoration: none;
+    color: white;
+}
+.cont_copyright{
+    font-size:1.3em ;
+}
+.cont_copyright p{
+    margin: 0;
+    padding: 0;
+    font-family: likin_park;
+}
+.page_official i{
+    margin-right: 15px;
+}
