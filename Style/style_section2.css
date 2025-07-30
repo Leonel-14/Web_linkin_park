@@ -4,7 +4,7 @@
 }
 .section_members{
     width: 100%;
-    min-height: 100vh;
+    height: min-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -24,37 +24,9 @@
     display: flex;
     justify-content: space-around;
 }
-.cont_card{
-    width: 15em;
-    height: 35em;
-    border: 1px solid black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    background-color: rgba(130,130,130,0.5);
- 
-    position: relative;
-}
 
 
-.cont_card_img{
-    width: 250px;
-    margin: 10px;
-}
-.cont_card_img img{
-    width: 100%;
-    clip-path: circle();
 
-}
-.cont_card_text p{
-    color: white;
-    font-size: 0.8em;
-    font-weight: bold;
-    margin-left: 2px;
-    margin-right: 2px;
-}
 
 .cont_card_instrument{
 width: 100px;
@@ -80,5 +52,67 @@ position: relative;
 .cont_card_instrument_icon i{
     font-size: 2em;
     color: white;
+    
+}
+
+.card_members{
+    position: relative;
+    width: 15em;
+    height: 25em;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    margin: 20px;
+}
+.card_members .front{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    
+}
+.card_members .front img{
+    width: fit-content;
+    height: 90%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+.front,.back{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px black;
+
+}
+
+.back{
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("https://i.pinimg.com/736x/71/7d/21/717d21b933ff62bc61ae95350f6b6828.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+.back p{
+    margin: 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    /*background-color: rgba(175, 175, 175, 0.7);*/
+    padding: 2px;
+    border-radius: 20px;
+    /*border: 1px solid white;*/
+}
+
+.card_members:hover{
+    transform: rotateY(180deg);
     
 }

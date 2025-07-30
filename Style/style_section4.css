@@ -25,6 +25,14 @@
     border-top-right-radius: 30px;
     padding: 5em;
 }
+.sub_history{
+   color: white;
+    width: 100%;
+    margin-right: 2em;
+    text-align: start;
+    font-size: 3em;
+    font-family: likin_park;
+}
 .row_history div{
     display: flex;
     justify-content: center;
@@ -45,19 +53,19 @@
     width: 100%;
     border-radius: 30px;
 }
-.container_history > .row_history:nth-child(1) {
-  background-color: rgba(0, 0, 0, 0.7);
-}
 .container_history > .row_history:nth-child(2) {
-  background-color: rgba(150,150,150,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .container_history > .row_history:nth-child(3) {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-.container_history > .row_history:nth-child(4) {
   background-color: rgba(150,150,150,0.7);
 }
+.container_history > .row_history:nth-child(4) {
+  background-color: rgba(0, 0, 0, 0.7);
+}
 .container_history > .row_history:nth-child(5) {
+  background-color: rgba(150,150,150,0.7);
+}
+.container_history > .row_history:nth-child(6) {
   background-color: rgba(0, 0, 0, 0.7);
 }
 

@@ -38,7 +38,12 @@
         width: 300px;
         height: 300px;
       }
-
+.swiper-slide p{
+  font-size: 1.5em;
+  font-family: likin_park;
+  color: white;
+  text-align: center;
+}
 .swiper-slide img {
         display: block;
         width: 100%;
